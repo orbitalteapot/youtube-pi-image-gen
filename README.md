@@ -49,7 +49,7 @@ docker-compose up
 ## Build images using docker
 If you use this method you can copy the images with docker cp, or add a volume bind to the command.
 
-Renember to edit the env.list with your configuration.
+Remember to edit the env.list with your configuration.
 ```sh
 docker pull ghcr.io/orbitalteapot/youtube-pi-image-gen:latest
 docker run --privileged --name orbitalteapotbuild -it --env-file /mnt/d/youtube-pi-image-gen/debian/env.list ghcr.io/orbitalteapot/youtube-pi-image-gen ./startup.sh
